@@ -1,0 +1,82 @@
+
+
+body {
+	background-color: #f2f2f2;
+}
+
+h1 {
+	font-size: 28px;
+	color: #0077b5;
+	margin-top: 40px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(36, 9, 190, 0.625);
+    margin-top: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    
+  }
+  .container h1{
+    color: #1010aa;
+  }
+ 
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #myButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1010aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #myButton:hover {
+    background-color: #200e6e;
+  }
+  
+  #error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+  #myMessage {
+    color: red;
+    font-weight: bold;
+  }
+  
+header {
+    background-color: #2621a1;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}

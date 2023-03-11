@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <title>
+            Liberty Bank
+        </title>
+       
+<style>
+  body {
+    font-family:  sans-serif;
+    margin: 0;
+    background-color: rgb(245,245,245);
+   }
+  
+  .navbar {
+    overflow: hidden;
+    background-color:rgb(0,49,125);  height: 11%;
+   
+  }
+  .a2{text-decoration: none;
+  color: white;}
+  
+  .a2 ::hover{
+    color: rgb(145, 145, 241);
+    text-decoration: underline 1px solid;
+  }
+  .navbar a {
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 11%;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 60pt;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:rgb(199, 209, 226);}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(199, 209, 226);  min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  
+  }
+  
+  .dropdown-content a {
+    float: none;
+    background-color:rgb(0,49,125);  padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+      height: 14%;
+  
+  
+  }
+  
+  .dropdown-content a:hover {
+      background-color:rgb(199, 209, 226);}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .button1 {
+    transition-duration: 0.4s;
+    background-color: deepskyblue;
+    color: white;
+    font-size: 13pt;
+    
+  }
+  
+  .button1:hover {
+    background-color: #55aadb; /* Green */
+    color: white;
+  }
+  
+  .foot1{
+    background-color:rgb(0,49,125) ;
+    margin-bottom: 0;
+    position: static;
+    left: 0;
+    bottom: 0;
+      width: 100%;
+  text-align: left;}
+  .foot2{
+    background-color:rgb(49,52,68) ;
+    left: 0;
+      height: 260pt;
+    bottom: 0;
+  text-align: left;
+      width: 100%;}
+      .main{
+      background-image: url(thas.png);
+      background-repeat: no-repeat; 
+    }
+  
+  </style>
+    </head>
+<body>
+  <div class="navbar" >
+
+    <div class="dropdown" style="margin-left: 0pt;">
+   
+       <button class="dropbtn" onclick="window.location.href='home.html';">HOME  
+   
+   
+       </button>
+       <div class="dropdown-content">
+       
+       </div>
+     </div> 
+    
+     <div class="dropdown">
+       <button class="dropbtn">MAKE PAYMENTS &nbsp;&#9013; 	
+   
+       </button>
+       <div class="dropdown-content">
+        <a href="statements.html">Credit Card Bill</a>
+        <a href="ind.html">Add Loan Payments</a>
+        <a href="taxreq.html">Taxes</a>
+       <a href="paybills.html"> Bills</a>
+   
+   
+       </div>
+     </div> 
+     <div class="dropdown">
+       <button class="dropbtn">FAMILY BANKING &nbsp;&#9013; 	
+       </button>
+       <div class="dropdown-content">
+        <a href="main.html">Add Family Member</a>
+        <a href="remove.html">Remove</a>
+         <a href="paybills.html">Make Transaction</a>
+   
+       </div>
+     </div> 
+     <div class="dropdown">
+       <button class="dropbtn">VOUCHERS &nbsp;&#9013; 	
+       </button>
+       <div class="dropdown-content">
+        <a href="bd.html">Birthday</a>
+        <a href="anniversary.html">Anniversary</a>
+        <a href="newyears.html">New Years</a>
+       <a href="eidv.html">Eid</a>
+     
+   
+       </div>
+     </div> 
+    <div class="dropdown">
+       <button class="dropbtn">OUR PARTNERS &nbsp;&#9013; 	
+       </button>
+       <div class="dropdown-content">
+        <a href="https://www.amazon.ae" target="_blank">Amazon</a>
+        <a href="https://www.noon.com" target="_blank">Noon</a>
+        <a href="https://www.wish.com" target="_blank">Wish</a>
+              <a href="https://www.ebay.com" target="_blank">eBay</a>
+  
+   
+       </div>
+     </div> 
+      <div class="dropdown">
+       <button class="dropbtn"> USER &nbsp;&#9013; 	
+       </button>
+       <div class="dropdown-content">
+        <a href="statements.html">Status</a>
+        <a href="statements.html">Bank Balance</a>
+              <a href="https://calendar.google.com/calendar/u/0/r">Calendar</a>
+   
+       </div>
+     </div> 
+   
+     <div style="float: right;">
+      <button class="button1" style="float: right; margin-right: 15pt;margin-top: 20pt; width: 120%;height: 30pt;border-radius: 6%;border: 0pt; margin-bottom: 10pt;" onclick="window.location.href='famlog.html';">Log In <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+      </svg></button></div>
+   
+     
+    <div> <img src="newlog.jpeg" style="width:110pt;height:60pt;float: right; position: none; margin-right: 50pt;border-radius: 6%;" ></div>
+   </div>
+   
+   
+   
+   
+   
+   
+   <div style="background-color: rgb(245, 245, 245); height:80%;" class="main"><!--type your code here or remove this div then paste your code--></div>
+   
+   <div style="width: 150px; background-color: #24aef3; z-index: 10; position: fixed; right: 10pt; bottom: 10pt; height: 83px; border-radius: 5%; text-align: center;"><br>
+    <a href="chatbot.htm" style="color: white; font-size: 20pt; text-decoration: none;">Chat With Us!</a>
+    
+    </div>
+    <h2 style="margin-left: 50pt; font-size: 30pt;color: rgb(0,49,125);">Our Unique Cashback Policies</h2>
+  
+    <div class="row" style="height: 400pt;">
+      <div class="column" style="background-color: rgb(27, 80, 159); margin-left: 50pt;">
+        <h2>Enjoy 5% Cashback<sup>*</sup> on one category below</h2>
+        <ul>
+        <li>Grocery</li>
+        <li>Fuel</li>
+      <li>International spends<sup>**</sup></li>
+    <li>Dining</li>
+    </ul>
+      </div>
+      <div class="column" style="background-color:rgb(44, 103, 192);margin-left:50pt; ">
+        <h2>Enjoy 3% Cashback<sup>*</sup> on one category below</h2>
+        <ul>
+          <li>Education</li>
+        <li>Grocery</li>
+        <li>Fuel</li>
+        <li>International spends<sup>**</sup></li>
+        <li>Dining</li>
+  
+        </ul>
+      </div>
+      <div class="column" style="background-color:rgb(110, 153, 219); margin-left:50pt;">
+        <h2>Enjoy 1% cashback</h2>
+        <p>on all your other retail transactions except government spends</p>
+      </div>
+    </div>
+  
+  
+  
+  <div style="background-color: rgb(245, 245, 245); height: 230pt; border: 0px solid grey;"> 
+  <h1 style="text-align: center; font-family: caibri;">Our Proud Partners</h1><br>
+  <p style="text-align: center; padding-left: 20pt;"><a href="https://www.amazon.ae" target="_blank"><img src="amazon.png" width="200pt" style="padding-right: 50pt;"></a>
+    <a href="https://www.noon.com" target="_blank"><img src="noon.png" width="200pt" style="padding-right: 50pt;" ></a>
+    <a href="https://www.wish.com" target="_blank"><img src="wish.png" width="200pt" style="padding-right: 50pt;"></a>
+    <a href="https://www.ebay.com" target="_blank"><img src="ebay.png" width="200pt" style="padding-right: 50pt;"></a>
+  </p>
+  </div>
+   
+   
+   
+   <div class="foot1" >
+     <br><br>
+   
+     <a class="a2" href="home.html" style="margin-left: 180pt;  padding: 14px 16px; font-weight: bolder;
+     ">About Liberty &nbsp; |</a>
+     <a class="a2" href="ib.pdf" style="margin-left: 30pt;  padding: 14px 16px;font-weight: bolder;
+     ">Understanding Islamic Banking &nbsp; |</a>
+     <a class="a2" href="https://www.cnbc.com/banks/" style="margin-left: 30pt;  padding: 14px 16px;font-weight: bolder;
+     ">News Center &nbsp; |</a>
+     <a class="a2" href="sec.html" style="margin-left: 30pt;  padding: 14px 16px;font-weight: bolder;
+     ">Our Security &nbsp; |</a>
+   <br>
+   <br>
+   <br>
+   
+   <div class="foot2">
+   <div style="float: left; margin-top: 0pt; margin-left: 0pt; border-right: 0px solid white; padding-right: 30pt; ">  <img src="newlog.jpeg"width="190pt" height="120pt" style=" border-radius: 6%;">
+   <br><br><hr>
+   <br>
+   <center style="color:white; font-size: 17pt;">Social Media</center>
+   <br> <a href="https://www.facebook.com/"><img src="icons8-facebook-circled-50.png"></a>
+   <a href="https://twitter.com/"><img src="icons8-twitter-circled-50.png"></a><a href="https://www.linkedin.com/login"><img src="icons8-linkedin-circled-50.png"></a><a href="https://www.instagram.com/"><img src="icons8-instagram-circle-50.png"></a>
+   
+   </div>
+   
+   <div style="color: white;float: left; margin-top: 0pt;margin-right: 0pt;margin-left: 10pt; ">
+     <h3>General</h3> 
+     <a class="a2" href="firstp.html">Reward Points</a><br><br>
+     <a class="a2" href="taxreq.html">Requirements</a><br><br>
+     <a class="a2" href="sig.pdf">Feeedback Form</a><br><br> 
+   </div>
+   &emsp;
+   &emsp;
+   &emsp;
+   <div style="color: white; float: left; margin-top: 0pt;margin-right: 0pt; margin-left: 10pt; ">
+     <h3>Tools</h3> 
+     <a class="a2" href="credacc.html">Specialised Accounts</a><br><br>
+     <a class="a2" href="credacc.html">Credit Cards</a><br><br>
+     <a class="a2" href="home.html">Features and Benifits</a><br><br>
+   
+    
+   </div>
+   &emsp;   &emsp;
+   &emsp;
+
+   <div style="color: white; float: left; margin-top: 0pt;margin-right: 0pt;margin-left: 10pt; ">
+    <h3>Resources</h3> 
+     <a class="a2" href="home.html">Family Types</a><br><br>
+     <a class="a2" href="home.html">Pricing Benifits</a><br><br>
+     <a class="a2" href="tcp.html">Privacy Policy</a><br><br>
+     <a class="a2" href="tcp.html">T&C's</a><br><br>
+   
+   
+   </div>
+   &emsp;   &emsp;
+   &emsp;
+
+   <div style="color: white; float: left; margin-top: 0pt;margin-right: 0pt;  ">
+    
+     <img src="map.png" width="150pt" height="80pt" style="border-radius: 6%;">
+   
+     <figcaption><br>&nbsp;Our Location<br>1st and 2nd Floor <br>Dubai Academic City<br>PO Box 345015<br>Dubai, UAE<br>Tel: +971 4 279 1400
+       </figcaption>
+      
+    </div>
+    
+   </div>
+   
+   </div>
+   <h3 style="color: white; background-color: rgb(49,52,68); margin: 0; padding-left: 150pt;font-weight: lighter;">
+     Copyrights &#169; 2006 reserved Liberty Bank Public Joint Stock Company licensed by the Central Bank of the UAE.</h3>
+</body>
+</html>

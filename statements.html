@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        background-color: rgb(245, 245, 245);
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: rgb(0, 49, 125);
+        height: 60pt;
+      }
+      .a2 {
+        text-decoration: none;
+        color: white;
+      }
+
+      .a2 ::hover {
+        color: rgb(145, 145, 241);
+        text-decoration: underline 1px solid;
+      }
+      .navbar a {
+        float: left;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        height: 60pt;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 14px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        height: 60pt;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: rgb(199, 209, 226);
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(199, 209, 226);
+        min-width: 400px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        background-color: rgb(0, 49, 125);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        height: 20pt;
+      }
+
+      .dropdown-content a:hover {
+        background-color: rgb(199, 209, 226);
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .button1 {
+        transition-duration: 0.4s;
+        background-color: deepskyblue;
+        color: white;
+        font-size: 13pt;
+      }
+
+      .button1:hover {
+        background-color: #55aadb; /* Green */
+        color: white;
+      }
+
+      .foot1 {
+        background-color: rgb(0, 49, 125);
+        margin-bottom: 0;
+        position: static;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: left;
+      }
+      .foot2 {
+        background-color: rgb(49, 52, 68);
+        left: 0;
+        height: 260pt;
+        bottom: 0;
+        text-align: left;
+        width: 100%;
+      }
+
+      /* statement */
+
+      .statement-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80vw;
+        margin-top: 3rem;
+      }
+
+      table {
+        color: #111;
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th {
+        padding: 0.75rem;
+        text-align: start;
+        background-color: rgb(0, 49, 125);
+        color: #fff;
+      }
+
+      table td {
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 0.75rem;
+        color: darkblue;
+      }
+
+      table tbody tr:nth-of-type(odd) {
+        background-color: lightblue;
+      }
+
+      table th:first-of-type {
+        border-top-left-radius: 10px;
+      }
+
+      table th:last-of-type {
+        border-top-right-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="navbar">
+      <div class="dropdown" style="margin-left: 66pt">
+        <button class="dropbtn" onclick="window.location.href='home.html';">
+          HOME
+        </button>
+        <div class="dropdown-content"></div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">MAKE PAYMENTS &nbsp;&#9013;</button>
+        <div class="dropdown-content">
+          <a href="statements.html">Credit Card Bill</a>
+      <a href="ind.html">Add Loan Payments</a>
+      <a href="taxreq.html">Taxes</a>
+     <a href="paybills.html"> Bills</a>
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">FAMILY BANKING &nbsp;&#9013;</button>
+        <div class="dropdown-content">
+          <a href="main.html">Add Family Member</a>
+          <a href="remove.html">Remove</a>
+           <a href="paybills.html">Make Transaction</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">VOUCHERS &nbsp;&#9013;</button>
+        <div class="dropdown-content">
+          <a href="bd.html">Birthday</a>
+          <a href="anniversary.html">Anniversary</a>
+          <a href="newyears.html">New Years</a>
+         <a href="eidv.html">Eid</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">OUR PARTNERS &nbsp;&#9013;</button>
+        <div class="dropdown-content">
+          <a href="https://www.amazon.ae" target="_blank">Amazon</a>
+          <a href="https://www.noon.com" target="_blank">Noon</a>
+          <a href="https://www.wish.com" target="_blank">Wish</a>
+                <a href="https://www.ebay.com" target="_blank">eBay</a>
+    
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">USER &nbsp;&#9013;</button>
+        <div class="dropdown-content">
+          <a href="statements.html">Status</a>
+          <a href="statements.html">Bank Balance</a>
+                <a href="https://calendar.google.com/calendar/u/0/r">Calendar</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float: right; color: white; padding-left: 0pt; text-decoration: underline;">
+        <button class="dropbtn"> Logged In &nbsp;&#9013; 	
+        </button>
+        <div class="dropdown-content">
+          <a href="firstp.html">Logout</a>
+         
+        </div>
+      </div> 
+
+      <div style="float: right">Logged in</div>
+      <div>
+        <img
+          src="newlog.jpeg"
+          style="
+            width: 110pt;
+            height: 60pt;
+            float: right;
+            position: none;
+            margin-right: 50pt;
+            border-radius: 6%;
+          "
+        />
+      </div>
+    </div>
+
+    <div style="background-color: rgb(245, 245, 245); height: 300pt">
+      <!--type your code here or remove this div then paste your code-->
+      <div class="statement-container">
+        <table>
+          <thead>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Withdraw</th>
+            <th>Deposit</th>
+            <th>Amount</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/01/2023</td>
+              <td>Salary</td>
+              <td></td>
+              <td>$5000</td>
+              <td>$5000</td>
+            </tr>
+            <tr>
+              <td>01/02/2023</td>
+              <td>Rent</td>
+              <td>$1000</td>
+              <td></td>
+              <td>$4000</td>
+            </tr>
+            <tr>
+              <td>01/03/2023</td>
+              <td>Groceries</td>
+              <td>$200</td>
+              <td></td>
+              <td>$3800</td>
+            </tr>
+            <tr>
+              <td>01/04/2023</td>
+              <td>Utilities</td>
+              <td>$150</td>
+              <td></td>
+              <td>$3650</td>
+            </tr>
+            <tr>
+              <td>01/05/2023</td>
+              <td>Car Payment</td>
+              <td>$300</td>
+              <td></td>
+              <td>$3350</td>
+            </tr>
+            <tr>
+              <td>01/06/2023</td>
+              <td>Insurance</td>
+              <td>$100</td>
+              <td></td>
+              <td>$3250</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="foot1">
+      <br /><br />
+
+      <a class="a2" href="home.html" style="margin-left: 180pt;  padding: 14px 16px; font-weight: bolder;
+">About Liberty &nbsp; |</a>
+<a class="a2" href="ib.pdf" style="margin-left: 30pt;  padding: 14px 16px;font-weight: bolder;
+">Understanding Islamic Banking &nbsp; |</a>
+<a class="a2" href="https://www.cnbc.com/banks/" style="margin-left: 30pt;  padding: 14px 16px;font-weight: bolder;
+">News Center &nbsp; |</a>
+<a class="a2" href="sec.html" style="margin-left: 30pt;  padding: 14px 16px;font-weight: bolder;
+">Our Security &nbsp; |</a>
+      <br />
+      <br />
+      <br />
+
+      <div class="foot2">
+        <div
+          style="
+            float: left;
+            margin-top: 50pt;
+            margin-left: 60pt;
+            border-right: 1px solid white;
+            padding-right: 30pt;
+          "
+        >
+          <img
+            src="newlog.jpeg"
+            width="190pt"
+            height="120pt"
+            style="border-radius: 6%"
+          />
+          <br /><br />
+          <hr />
+          <br />
+          <center style="color: white; font-size: 17pt">Social Media</center>
+          <br />
+          <a href="https://www.facebook.com/"><img src="icons8-facebook-circled-50.png"></a>
+<a href="https://twitter.com/"><img src="icons8-twitter-circled-50.png"></a><a href="https://www.linkedin.com/login"><img src="icons8-linkedin-circled-50.png"></a><a href="https://www.instagram.com/"><img src="icons8-instagram-circle-50.png"></a>
+
+        </div>
+
+        <div style="color: white;float: right; margin-top: 50pt;margin-right: 100pt; ">
+          <h3>General</h3> 
+          <a class="a2" href="firstp.html">Reward Points</a><br><br>
+          <a class="a2" href="taxreq.html">Requirements</a><br><br>
+          <a class="a2" href="sig.pdf">Family Signup<Br> Form</a><br><br> 
+        </div>
+        <div style="color: white; float: right; margin-top: 50pt;margin-right: 130pt;  display: inline;">
+          <h3>Tools</h3> 
+          <a class="a2" href="credacc.html">Specialised Accounts</a><br><br>
+          <a class="a2" href="credacc.html">Credit Cards</a><br><br>
+          <a class="a2" href="home.html">Features and Benifits</a><br><br>
+        
+         
+        </div>
+        <div style="color: white; float: right; margin-top: 50pt;margin-right: 100pt;  display: inline;">
+         <h3>Resources</h3> 
+          <a class="a2" href="home.html">Family Types</a><br><br>
+          <a class="a2" href="home.html">Pricing Benefits</a><br><br>
+          <a class="a2" href="tcp.html">Privacy Policy</a><br><br>
+          <a class="a2" href="tcp.html">T&C's</a><br><br>
+        
+        
+        </div>
+        <div
+          style="
+            color: white;
+            float: right;
+            margin-top: 50pt;
+            margin-right: 100pt;
+            display: inline;
+          "
+        >
+          <img
+            src="map.png"
+            width="150pt"
+            height="80pt"
+            style="border-radius: 6%"
+          />
+
+          <figcaption>
+            <br />&nbsp;Our Location<br />1st and 2nd Floor <br />Dubai Academic
+            City<br />PO Box 345015<br />Dubai, UAE<br />Tel: +971 4 279 1400
+          </figcaption>
+        </div>
+      </div>
+    </div>
+    <h3
+      style="
+        color: white;
+        background-color: rgb(49, 52, 68);
+        margin: 0;
+        padding-left: 150pt;
+        font-weight: lighter;
+      "
+    >
+      Copyrights &#169; 2006 reserved Liberty Bank Public Joint Stock Company
+      licensed by the Central Bank of the UAE.
+    </h3>
+  </body>
+</html>

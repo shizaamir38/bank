@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Add new family memeber</title>
+	<link rel="stylesheet" type="text/css" href="mainuser.css">
+</head>
+
+
+<body>
+    <header>
+	<h1>main user Page</h1>
+   </header>
+    <div class="container">
+        <h1>Add Family Member</h1>
+        <form id="add-member-form" onsubmit="addMember(); return false;">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="privilege">Privilege Status:</label>
+            <select id="privilege" name="privilege" required>
+              <option value="main-user">Main User</option>
+              <option value="sub-user">Sub-User</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+          </div>
+          <div class="form-group">
+            
+            <button id="myButton">add Member</button>
+            <p id="myMessage" style="display:none;">new member added </p>
+
+          </div>
+        </form>
+        
+      </div>
+
+	<script src="mainuser.js"></script>
+</body>
+
+
+
+</html>

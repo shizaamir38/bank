@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styled.css" />
+    
+  </head>
+  <body>
+    
+       
+       
+    <div class="box">
+      <span class="borderLine"></span>
+      <form onsubmit="openModal()">
+        <h2>Add Debit</h2>
+
+        <div class="inputBox">
+          <input type="text" required="required" />
+          <span>Add Pending Debits Amount</span>
+          <i></i>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" required="required" />
+          <span>Payment Installment Per Month</span>
+          <i></i>
+        </div>
+
+        <div class="inputBox">
+          <input type="text" required="required" />
+          <span>Final Date to Fulfill This Debit</span>
+          <i></i>
+        </div>
+
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+
+    <section>
+      <span class="overlay"></span>
+      <div class="modal-box">
+        <i class="fa-regular fa-circle-check"></i>
+        <h2>Thank You!</h2>
+        <h3>You have successfully submitted your details.</h3>
+
+        <div class="buttons">
+          <button class="close-btn" onclick="window.location.href='home.html'">Ok, Close</button>
+        </div>
+      </div>
+    </section>
+
+    
+    <script>
+      const section = document.querySelector("section"),
+        overlay = document.querySelector(".overlay"),
+        showBtn = document.querySelector(".show-modal"),
+        closeBtn = document.querySelector(".close-btn"),
+        form = document.querySelector("form"),
+        box = document.querySelector(".box");
+
+      function openModal(event) {
+        section.classList.add("active");
+        box.style.display = "none";
+        console.log("openModal");
+        event.preventDefault();
+      }
+
+      form.addEventListener("submit", openModal);
+
+      showBtn.addEventListener("click", () => section.classList.add("active"));
+
+      overlay.addEventListener("click", () => {
+        console.log("close");
+        section.classList.remove("active");
+      });
+
+      closeBtn.addEventListener('click', () => {
+        window.location.href='home.html';
+
+        //console.log("close");
+        //section.classList.remove("active");
+        //box.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
